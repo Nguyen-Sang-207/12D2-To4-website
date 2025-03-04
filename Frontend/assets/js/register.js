@@ -72,7 +72,7 @@ formRegister.addEventListener("submit", async function (e) {
     };
 
     try {
-        const response = await fetch('https://12d2-to4-website-backend.onrender.com/register', {
+        const response = await fetch('https://one2d2-to4-website-backend.onrender.com/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user),
