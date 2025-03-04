@@ -10,14 +10,20 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Atlas
+require('dotenv').config();
+
 async function startServer() {
     try {
         console.log('Bắt đầu kết nối MongoDB...');
-        await mongoose.connect('mongodb+srv://nguyenvanmsang:Sang2932007@cluster.mvnmj.mongodb.net/userdb?retryWrites=true&w=majority&appName=Cluster', {
+        await mongoose.connect(process.env.MONGODB_URI, {
             serverSelectionTimeoutMS: 5000,
         });
         console.log('Kết nối MongoDB thành công!');
-
+    } catch (err) {
+        console.error('Lỗi kết nối MongoDB:', err);
+        process.exit(1);
+    }
+}
         // API Register
         app.post('/register', async (req, res) => {
             const { username, nickname, password } = req.body;
