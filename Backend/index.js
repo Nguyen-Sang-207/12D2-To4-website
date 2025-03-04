@@ -6,8 +6,14 @@ const cors = require('cors');
 const User = require('./models/User');
 
 const app = express();
+
+const corsOptions = {
+  origin: 'https://one2d2-to4-website-frontend.onrender.com', 
+  optionsSuccessStatus: 200 
+};
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 require('dotenv').config();
 
