@@ -9,7 +9,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// MongoDB Atlas
 require('dotenv').config();
 
 async function startServer() {
@@ -19,11 +18,7 @@ async function startServer() {
             serverSelectionTimeoutMS: 5000,
         });
         console.log('Kết nối MongoDB thành công!');
-    } catch (err) {
-        console.error('Lỗi kết nối MongoDB:', err);
-        process.exit(1);
-    }
-}
+
         // API Register
         app.post('/register', async (req, res) => {
             const { username, nickname, password } = req.body;
@@ -49,7 +44,7 @@ async function startServer() {
                 if (!user || !(await bcrypt.compare(password, user.password))) {
                     return res.status(400).json({ message: 'Tên đăng nhập hoặc mật khẩu không đúng' });
                 }
-                const token = jwt.sign({ id: user._id }, 'your-secret-key', { expiresIn: '1h' });
+                const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET || 'your-secret-key', { expiresIn: '1h' });
                 res.json({
                     message: 'Đăng nhập thành công!',
                     token,
@@ -65,7 +60,7 @@ async function startServer() {
         app.listen(PORT, () => console.log(`Server chạy tại http://localhost:${PORT}`));
     } catch (err) {
         console.error('Lỗi kết nối MongoDB:', err);
-        process.exit(1); 
+        process.exit(1);
     }
 }
 
