@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../assets/css/login-register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="formRegister" action="">
+            <h1>Đăng ký</h1>
+            <div class="input-box">
+                <input id="nickName" type="text" placeholder="Tên người dùng" >
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input id="userName" type="text" placeholder="Tên đăng nhập" >
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input id="password" type="password" placeholder="Mật khẩu" >
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            
+            <div class="input-box">
+                <input id="repassword" type="password" placeholder="Xác nhận mật khẩu" >
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="align-center remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Tôi hoàn toàn đồng ý với <a href="#">Điều khoản dịch vụ</a> & <a href="#">Chính sách bảo mật.</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Đăng ký</button>
+            <div class="register-link">
+                <p>Bạn đã có tài khoản? <a href="./login.html">Đăng nhập</a></p>
+            </div>
+            <a href="../index.html" class="back-btn"><i class='bx bxs-chevron-left'></i></a>
+        </form>
+    </div>
+
+    <!-- vaildate -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <header class="modal-heading">
+                Đăng ký không thành công
+            </header>
+            <div class="modal-body">
+                <div class="validate">
+                    <p><i id="nickNameError" class='bx bxs-error-circle' >Tên người dùng không được để trống</i></p>
+                    <p><i id="userNameError" class='bx bxs-error-circle' >Tên đăng nhập không được để trống</i></p>
+                    <p><i id="passwordError" class='bx bxs-error-circle' >Mật khẩu không được để trống</i></p>
+                    <p><i id="repasswordError" class='bx bxs-error-circle' >Mật khẩu xác nhận không được để trống</i></p>
+                </div>
+                <button id="close-btn">
+                    Đóng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+     <script src="../assets/js/register.js"></script>
+</body>
+</html>

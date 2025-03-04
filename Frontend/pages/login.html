@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../assets/css/login-register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="formLogin" action="">
+            <h1>Đăng nhập</h1>
+
+            <div id="alertError" class="alert-danger" role="alert">
+                Tên đăng nhập hoặc mật khẩu không chính xác!
+              </div>
+
+            <div class="input-box">
+                <input id="userName" type="text" placeholder="Tên đăng nhập" >
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input id="password" type="password" placeholder="Mật khẩu" >
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Lưu đăng nhập
+                </label>
+                <a href="#">Quên mật khẩu?</a> 
+            </div>
+
+            <button type="submit" class="btn">Đăng nhập</button>
+            <div class="register-link">
+                <p>Chưa có tài khoản? <a href="./register.html">Đăng ký</a></p>
+            </div>
+            <a href="../index.html" class="back-btn"><i class='bx bxs-chevron-left'></i></a>
+        </form>
+    </div>
+
+    <!-- Script -->
+     <script src="../assets/js/login.js"></script>
+</body>
+</html>

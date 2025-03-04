@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love 12D2</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="navbar">
+                <div class="logo">D<a href="#">high</a></div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/info.html">Thông tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/member-card.html">Thành viên</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                        thêm
+                        <i class='bx bxs-chevron-down'></i>
+                        </a>
+                            <!-- <ul class="subnav-list">
+                                <li><a class="subnav-item" href="#Introduce">Giới thiệu</a></li>
+                                <li><a class="subnav-item" href="">Tin tức</a></li>
+                                <li><a class="subnav-item" href="">Trò chuyện</a></li>
+                            </ul> -->
+                    </ul>
+                <div id="log-reg-js" class="action-btn">
+                    <a class="log-btn" href="./pages/login.html">Đăng nhập</a>
+                    <a class="reg-btn" href="./pages/register.html">Đăng ký</a>
+                </div>
+
+                <div id="user-profile" class="dropdown">
+                    <div class="profile-content">
+                        <i class='bx bxs-user-circle'></i>
+                        <a id="userLogin"></a>
+                    </div>
+                    <div id="profile-dropdown" class="profile-dropdown" style="display: none;">
+                        <a href="#" id="profile-info">Người dùng</a>
+                        <a href="#" id="profile-logout">Đăng xuất</a>
+                    </div>
+                </div>
+
+                <button id="menu-btn" class="menu-btn"><i class='bx bx-menu'></i></button>
+                <div id="mobile-menu" class="mobile-menu">
+                    <ul id="nav-list-mobile" class="nav-list-mobile">
+                        <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/info.html">Thông tin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/member-card.html">Thành viên</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">thêm <i class='bx bxs-chevron-down'></i></a></li>
+                    </ul>
+                    <a href="./pages/login.html">Đăng nhập</a>
+                    <a href="./pages/register.html">Đăng ký</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <p class="text-1" >Những cá thể</p>
+                <p class="text-2" >Khác biệt</p>
+            </div>
+        </div>
+        <div id="content">
+             <!-- About section -->
+             <div id="Introduce" class="content-section">
+                <h2 class="mt-32 section-heading">Giới thiệu</h2>
+                <p class="section-sub-heading">Lớp 12D2</p>
+                <p class="about-text">Bộ máy nhà nước đứng đầu là Chủ tịch công đoàn cô Lan Hương cùng với 41 thành viên học sinh kiên cường bất khuất vượt qua mọi khó khăn. Một tập thể đoàn kết không đầu hàng trước điểm  số.
+                    Với châm ngôn nói không nghe, chửi giả điếc thì họ đã vượt qua biết bao nhiêu là những tình huống hiểm nghèo để trở thành một siêu cường của khối 12. Họ xứng đáng là một ngọn đuốc giữa ánh mặt trời để soi sáng cho thế hệ các bạn học sinh lớp trẻ noi theo (không khuyến khích).                    
+                </p>
+            </div>
+
+             <!-- Card Slider section -->
+            <div id="wrapper-card-slider">
+                <div class="card-slider">
+                   
+                    <i id="left" class='bx bx-chevron-left'></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb1.jpg" alt="Image" draggable="false"></div>
+                            <h2>Đào Ngọc Trâm Anh</h2>
+                            <span>Thủ quỷ</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb2.jpg" alt="Image" draggable="false"></div>
+                            <h2>Đinh Kim Anh</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb3.jpeg" alt="Image" draggable="false"></div>
+                            <h2>Phạm Thị Như Ánh</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb4.jpg" alt="Image" draggable="false"></div>
+                            <h2>Ngô Đức Duy</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb5.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Thị Chúc Đào</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Đỗ Thành Đạt</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Tạ Nguyễn Khánh Hà</h2>
+                            <span>Lớp trưởng</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Sỹ Hào</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb9.jpg" alt="Image" draggable="false"></div>
+                            <h2>Lưu Nhã Hân</h2>
+                            <span>Tổ trưởng</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Ngọc Hân</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Trần Hoàng Gia Hân</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Vũ Đức Thanh Hoàng</h2>
+                            <span>Bí thư</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Thị Kim Hồng</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Đặng Nguyễn Tuấn Huy</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb15.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Thu Huyền</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb16.jpg" alt="Image" draggable="false"></div>
+                            <h2>Hồ Thị Hoàng Mỹ</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb17.jpg" alt="Image" draggable="false"></div>
+                            <h2>La Võ Bảo Ngân</h2>
+                            <span>Tổ trưởng</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb18.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Ngọc Mẫn Nghi</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Phạm Trọng Nghĩa</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb20.jpg" alt="Image" draggable="false"></div>
+                            <h2>Bùi Lâm Bảo Ngọc</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb21.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Hoài Bảo Nhi</h2>
+                            <span>Tổ trưởng</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb22.jpg" alt="Image" draggable="false"></div>
+                            <h2>Lý Ngọc Như</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb23.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Tấn Phú</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb24.jpg" alt="Image" draggable="false"></div>
+                            <h2>Trần Phú</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb25.jpeg" alt="Image" draggable="false"></div>
+                            <h2>Trần Minh Phúc</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Phan Thanh Phương</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb27.jpg" alt="Image" draggable="false"></div>
+                            <h2>Hồng Thiên Quang</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb28.jpg" alt="Image" draggable="false"></div>
+                            <h2>Chắng Tường Quý</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb29.jpg" alt="Image" draggable="false"></div>
+                            <h2>Đặng Thị Thuý Quyền</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb30.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Thi Nhật Quỳnh</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb31.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Văn Mỹ Sang</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Phạm Minh Thuận</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb33.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Minh Thư</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb34.jpg" alt="Image" draggable="false"></div>
+                            <h2>Phan Thị Ngọc Anh Thư</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb35.jpg" alt="Image" draggable="false"></div>
+                            <h2>Trần Ngọc Anh Thư</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb36.jpg" alt="Image" draggable="false"></div>
+                            <h2>Nguyễn Hoàng Thy</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Trần Ngọc Quỳnh Trang</h2>
+                            <span>Tổ trưởng</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb38.jpg" alt="Image" draggable="false"></div>
+                            <h2>Võ Anh Tuấn</h2>
+                            <span>Bí thư</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Lê Trúc Đan Uyên</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb40.jpg" alt="Image" draggable="false"></div>
+                            <h2>Võ Thị Ngọc Vân</h2>
+                            <span>Lớp phó</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb41.jpg" alt="Image" draggable="false"></div>
+                            <h2>Sú Thế Vinh</h2>
+                            <span>Học sinh</span>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="./assets/img/member/mb0.jpg" alt="Image" draggable="false"></div>
+                            <h2>Trần Thị Lan Hương</h2>
+                            <span>Giáo viên</span>
+                        </li>
+
+                    </ul>
+                    <i id="right" class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+
+             <!-- Image section -->
+              <div id="image-section">
+                <div class="content-section">
+                    <h2 class="section-heading">Ảnh lớp 12d2</h2>
+                    <p class="section-sub-heading">Hình ảnh chỉ mang tính chất minh hoạ!</p>
+                </div>
+                <div class="image-list ">
+                    <img src="./assets/img/image12d2/img12d2(1).jpg" alt="Ảnh lớp" class="col col-3 s-col-full mt-32">
+                    <img src="./assets/img/image12d2/img12d2(2).jpg" alt="Ảnh lớp" class="col col-3 s-col-full mt-32">
+                    <img src="./assets/img/image12d2/img12d2(3).jpg" alt="Ảnh lớp" class="col col-3 s-col-full mt-32">
+              </div>
+
+              <!-- Video section -->
+              <div id="video-section">
+                <div class="container">
+                    <div class="col-2 video-holder">
+                        <img src="./assets/img/image12d2/img12d2(4).jpg" alt="poster" class="thumbnail" style="display: block;">
+                        <video src="./assets/video/vid-12d2.mp4" controls class="video-player" style="display: none;"></video>
+                    </div>
+                    <div class="col-2 video-content">
+                        <h2 class="content-heading">Video kỷ niệm</h2>
+                        <p class="text-content">Thước phim lưu lại những kỷ niệm đẹp</p>
+                        <div class="action-btn">
+                            <a class="reg-btn" href="" id="play-video">Xem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer">
+            <div class="socials-list">
+                <a href="#" class="social-item"><i class='bx bxs-home'></i></a>
+                <a href="#Introduce" class="social-item"><i class='bx bxs-info-circle'></i></a>
+                <a href="#wrapper-card-slider" class="social-item"><i class='bx bxs-group'></i></a>
+                <a href="#image-section" class="social-item"><i class='bx bxs-image-alt'></i></a>
+                <a href="#video-section" class="social-item"><i class='bx bxs-videos'></i></a>
+                <a href="#" class="social-item music-btn"><i class='bx bxs-music'></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="#">Tổ 4 Entertainment</a></p>
+            <audio id="background-music" loop>
+                <source src="./assets/audio/Friendship-Vibes.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    <!-- script -->
+     <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/card-slider.js" defer></script>
+</body>
+</html>

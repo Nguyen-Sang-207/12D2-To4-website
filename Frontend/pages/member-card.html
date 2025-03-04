@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành viên</title>
+    <link rel="stylesheet" href="../assets/css/member-card.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="navbar">
+                <div class="logo">D<a href="#">high</a></div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/info.html">Thông tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Thành viên</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                        thêm
+                        <i class='bx bxs-chevron-down'></i>
+                        </a>
+                            <!-- <ul class="subnav-list">
+                                <li><a class="subnav-item" href="#Introduce">Giới thiệu</a></li>
+                                <li><a class="subnav-item" href="">Tin tức</a></li>
+                                <li><a class="subnav-item" href="">Trò chuyện</a></li>
+                            </ul> -->
+                    </ul>
+                <div id="log-reg-js" class="action-btn">
+                    <a class="log-btn" href="../pages/login.html">Đăng nhập</a>
+                    <a class="reg-btn" href="../pages/register.html">Đăng ký</a>
+                </div>
+
+                <div id="user-profile" class="dropdown">
+                    <div class="profile-content">
+                        <i class='bx bxs-user-circle'></i>
+                        <a id="userLogin"></a>
+                    </div>
+                    <div id="profile-dropdown" class="profile-dropdown" style="display: none;">
+                        <a href="#" id="profile-info">Người dùng</a>
+                        <a href="#" id="profile-logout">Đăng xuất</a>
+                    </div>
+                </div>
+
+                <button id="menu-btn" class="menu-btn"><i class='bx bx-menu'></i></button>
+                <div id="mobile-menu" class="mobile-menu">
+                    <ul id="nav-list-mobile" class="nav-list-mobile">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/info.html">Thông tin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thành viên</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">thêm <i class='bx bxs-chevron-down'></i></a></li>
+                    </ul>
+                    <a href="../pages/login.html">Đăng nhập</a>
+                    <a href="../pages/register.html">Đăng ký</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card-container">
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-1.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 1</span>
+                    <h2 class="card-title">Đào Ngọc Trâm Anh</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-2.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 2</span>
+                    <h2 class="card-title">Đinh Kim Anh</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-3.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 3</span>
+                    <h2 class="card-title">Phạm Thị Như Ánh</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 4</span>
+                    <h2 class="card-title">Ngô Đức Duy</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-5.jpeg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 5</span>
+                    <h2 class="card-title">Nguyễn Thị Chúc Đào</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-6.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 6</span>
+                    <h2 class="card-title">Đỗ Thành Đạt</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 7</span>
+                    <h2 class="card-title">Tạ Nguyễn Khánh Hà</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 8</span>
+                    <h2 class="card-title">Nguyễn Sỹ Hào</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-9.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 9</span>
+                    <h2 class="card-title">Lưu Nhã Hân</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 10</span>
+                    <h2 class="card-title">Nguyễn Ngọc Hân</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 11</span>
+                    <h2 class="card-title">Trần Hoàng Gia Hân</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-12.jpeg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 12</span>
+                    <h2 class="card-title">Vũ Đức Thanh Hoàng</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 13</span>
+                    <h2 class="card-title">Nguyễn Thị Kim Hồng</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-14.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 14</span>
+                    <h2 class="card-title">Đặng Nguyễn Tuấn Huy</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-15.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 15</span>
+                    <h2 class="card-title">Nguyễn Thu Huyền</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-16.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 16</span>
+                    <h2 class="card-title">Hồ Thị Hoàng Mỹ</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-17.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 17</span>
+                    <h2 class="card-title">La Võ Bảo Ngân</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-18.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 18</span>
+                    <h2 class="card-title">Nguyễn Ngọc Mẫn Nghi</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 19</span>
+                    <h2 class="card-title">Phạm Trọng Nghĩa</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-20.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 20</span>
+                    <h2 class="card-title">Bùi Lâm Bảo Ngọc</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-21.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 21</span>
+                    <h2 class="card-title">Nguyễn Hoài Bảo Nhi</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-22.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 22</span>
+                    <h2 class="card-title">Lý Ngọc Như</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 23</span>
+                    <h2 class="card-title">Nguyễn Tấn Phú</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-24.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 24</span>
+                    <h2 class="card-title">Trần Phú</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 25</span>
+                    <h2 class="card-title">Trần Minh Phúc</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 26</span>
+                    <h2 class="card-title">Phan Thanh Phương</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-27.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 27</span>
+                    <h2 class="card-title">Hồng Thiên Quang</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-28.jpeg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 28</span>
+                    <h2 class="card-title">Chắng Tường Quý</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-29.jpeg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 29</span>
+                    <h2 class="card-title">Đặng Thị Thuý Quyền</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+            
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 30</span>
+                    <h2 class="card-title">Nguyễn Thi Nhật Quỳnh</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-31.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 31</span>
+                    <h2 class="card-title">Nguyễn Văn Mỹ Sang</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 32</span>
+                    <h2 class="card-title">Phạm Minh Thuận</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 33</span>
+                    <h2 class="card-title">Nguyễn Minh Thư</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-34.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 34</span>
+                    <h2 class="card-title">Phan Thị Ngọc Anh Thư</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-35.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 35</span>
+                    <h2 class="card-title">Trần Ngọc Anh Thư</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-36.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 36</span>
+                    <h2 class="card-title">Nguyễn Hoàng Thy</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 37</span>
+                    <h2 class="card-title">Trần Ngọc Quỳnh Trang</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-38.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 38</span>
+                    <h2 class="card-title">Võ Anh Tuấn</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 39</span>
+                    <h2 class="card-title">Lê Trúc Đan Uyên</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-40.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 40</span>
+                    <h2 class="card-title">Võ Thị Ngọc Vân</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-41.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">Số thứ tự: 41</span>
+                    <h2 class="card-title">Sú Thế Vinh</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="card-article">
+                <img src="../assets/img/member-card/mb-card-0.jpg" alt="" class="card-img">
+
+                <div class="card-data">
+                    <span class="card-decription">GVCN lớp 12D2</span>
+                    <h2 class="card-title">Trần Thị Lan Hương</h2>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+        </div>
+        <a href="#" class="up-btn"><i class='bx bxs-up-arrow'></i></a>
+    </div>
+
+    <!-- Script -->
+    <script src="../assets/js/index.js" defer></script>
+</body>
+</html>

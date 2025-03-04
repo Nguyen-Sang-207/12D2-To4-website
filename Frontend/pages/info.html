@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cơ Bản</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    
+        .wrapper2 {
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .wrapper2 .container {
+            margin-top: 70px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f5f7fa;
+        }
+    
+        .wrapper2 .container h1 {
+            background: linear-gradient(to right, #007bff, #00b4d8);
+            color: #fff;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 20px 60px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: auto;
+        }
+    
+        .wrapper2 .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        .wrapper2 .card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #007bff, #00b4d8);
+        }
+    
+        .card-icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+    
+        .card-title {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    
+        .wrapper2 .card-content {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            text-align: left;
+        }
+    
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .card {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .wrapper2 .container h1 {
+                font-size: 30px;
+            }
+    
+            .wrapper2 .card {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+    
+            .wrapper2 .card-icon {
+                font-size: 36px;
+            }
+    
+            .wrapper2 .card-title {
+                font-size: 16px;
+            }
+    
+            .wrapper2 .card-content {
+                font-size: 13px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .wrapper2 .container h1 {
+                font-size: 24px;
+                padding: 15px 0;
+                border-radius: 10px;
+            }
+    
+            .wrapper2 .container {
+                padding: 20px 10px;
+            }
+    
+            .wrapper2 .card-icon {
+                font-size: 30px;
+            }
+    
+            .wrapper2 .card-title {
+                font-size: 14px;
+            }
+    
+            .wrapper2 .card-content {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="navbar">
+                <div class="logo">D<a href="#">high</a></div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Thông tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/member-card.html">Thành viên</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                        thêm
+                        <i class='bx bxs-chevron-down'></i>
+                        </a>
+                            <!-- <ul class="subnav-list">
+                                <li><a class="subnav-item" href="#Introduce">Giới thiệu</a></li>
+                                <li><a class="subnav-item" href="">Tin tức</a></li>
+                                <li><a class="subnav-item" href="">Trò chuyện</a></li>
+                            </ul> -->
+                    </ul>
+                <div id="log-reg-js" class="action-btn">
+                    <a class="log-btn" href="../pages/login.html">Đăng nhập</a>
+                    <a class="reg-btn" href="../pages/register.html">Đăng ký</a>
+                </div>
+
+                <div id="user-profile" class="dropdown">
+                    <div class="profile-content">
+                        <i class='bx bxs-user-circle'></i>
+                        <a id="userLogin"></a>
+                    </div>
+                    <div id="profile-dropdown" class="profile-dropdown" style="display: none;">
+                        <a href="#" id="profile-info">Người dùng</a>
+                        <a href="#" id="profile-logout">Đăng xuất</a>
+                    </div>
+                </div>
+
+                <button id="menu-btn" class="menu-btn"><i class='bx bx-menu'></i></button>
+                <div id="mobile-menu" class="mobile-menu">
+                    <ul id="nav-list-mobile" class="nav-list-mobile">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thông tin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/member-card.html">Thành viên</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">thêm <i class='bx bxs-chevron-down'></i></a></li>
+                    </ul>
+                    <a href="../pages/login.html">Đăng nhập</a>
+                    <a href="../pages/register.html">Đăng ký</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div class="container">
+            <h1>Thông Tin</h1>
+            <div class="cards">
+                <div class="card">
+                    <i class='card-icon bx bx-memory-card'></i>
+                    <h3 class="card-title">Kỷ yếu</h3>
+                    <p class="card-content">Chúng tôi xem nó là một bức tranh sắc màu, vẽ nên từng nét đẹp của tuổi học trò, là những kỉ niệm thanh xuân ngọt ngào khắc sâu vào tâm hồn. Đó là hành trang của những tháng ngày dài, từng chuyến học trò, từng giờ phút giao lưu thân tình, với những người bạn thân thiết,những người thầy cô ân cần.</p>
+                </div>
+                <div class="card">
+                    <i class='card-icon bx bx-male-female'></i>
+                    <h3 class="card-title">Tình bạn</h3>
+                    <p class="card-content">Là ngọn gió mát lành, thổi qua những ngày nắng nóng của cuộc đời. Nó là sự chia sẻ không toan tính, là nụ cười rạng rỡ giữa cơn mưa buồn. Một người bạn tốt như đỉnh đèn soi ánh sáng, giúp ta vượt qua bóng tối. Tình bạn đẹp không cần lời hoa mỹ, chỉ cần chân thành là đủ.</p>
+                </div>
+                <div class="card">
+                    <i class='card-icon  bx bx-book-reader' ></i>
+                    <h3 class="card-title">Thanh xuân</h3>
+                    <p class="card-content">Thanh xuân học trò như một cuốn sách dày mà mình vừa mới lật sang những trang cuối cùng. Mới đó mà đã ba năm rồi, ba năm ở bên D2 thân yêu, biết bao thăng trầm, bao kỉ niệm. có những lúc khó khăn, những bài kiểm tra đầy thử thách, những lo toan về tương lai, về những lựa chọn mà chúng ta phải đối mặt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+     <script src="../assets/js/index.js" defer></script>
+</body>
+</html>
