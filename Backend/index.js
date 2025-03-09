@@ -6,14 +6,21 @@ const cors = require('cors');
 const User = require('./models/User');
 
 const app = express();
-app.use(express.json());
-app.use(cors());
 
-// MongoDB Atlas
+const corsOptions = {
+  origin: 'https://one2d2-to4-website-frontend.onrender.com', 
+  optionsSuccessStatus: 200 
+};
+
+app.use(express.json());
+app.use(cors(corsOptions));
+
+require('dotenv').config();
+
 async function startServer() {
     try {
         console.log('Bắt đầu kết nối MongoDB...');
-        await mongoose.connect('mongodb+srv://nguyenvanmsang:Sang2932007@cluster.mvnmj.mongodb.net/userdb?retryWrites=true&w=majority&appName=Cluster', {
+        await mongoose.connect(process.env.MONGODB_URI, {
             serverSelectionTimeoutMS: 5000,
         });
         console.log('Kết nối MongoDB thành công!');
@@ -43,7 +50,7 @@ async function startServer() {
                 if (!user || !(await bcrypt.compare(password, user.password))) {
                     return res.status(400).json({ message: 'Tên đăng nhập hoặc mật khẩu không đúng' });
                 }
-                const token = jwt.sign({ id: user._id }, 'your-secret-key', { expiresIn: '1h' });
+                const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET || 'your-secret-key', { expiresIn: '1h' });
                 res.json({
                     message: 'Đăng nhập thành công!',
                     token,
@@ -59,7 +66,7 @@ async function startServer() {
         app.listen(PORT, () => console.log(`Server chạy tại http://localhost:${PORT}`));
     } catch (err) {
         console.error('Lỗi kết nối MongoDB:', err);
-        process.exit(1); 
+        process.exit(1);
     }
 }
 
